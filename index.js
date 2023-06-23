@@ -11,4 +11,9 @@ app.get('/', (req, res) => {
   res.render('index', {haikus: haikus});
 });
 
+app.get('/greeting', (req, res) => {
+  res.json({greeting: 'hello'})
+})
+
+
 app.listen(port);
